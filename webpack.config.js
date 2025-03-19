@@ -11,7 +11,7 @@ module.exports = {
                 test: /\.(js|jsx)$/,
                 exclude: /(node_modules)/,
                 loader: 'babel-loader',
-                options: { presets: ["@babel/env"] }
+                options: { presets: ["@babel/preset-env", "@babel/preset-react"],}
             },
             {
                 test: /\.css$/,
@@ -19,7 +19,7 @@ module.exports = {
             }
         ]
     },
-    resolve: { extensions: ['*', '.js', '.jsx'] },
+    resolve: { extensions: [".*",".js",".jsx"] },
     output: {
         path: path.resolve(__dirname, 'dist/'),
         publicPath: '/',
