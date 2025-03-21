@@ -9,3 +9,42 @@ body {
     width: 100vw;
     height: 100vh;
 }
+.list-wrapper {
+    max-width: 700px;
+    margin: auto;
+}
+.new-todo-form {
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 4px 8px grey;
+}
+
+.new-todo-input {
+    font-size: 16px;
+    padding: 8px;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    border-radius: 8px;
+    width: 70%;
+    outline: none;
+}
+
+.todo-item-container {
+    background: #fff;
+    border-radius: 8px;
+    margin-top: 8px;
+    padding: 16px;
+    position: relative;
+    box-shadow: 0 4px 8px grey;
+
+    h3 {
+        display: table;
+    }
+}
+
+.buttons-container {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+}

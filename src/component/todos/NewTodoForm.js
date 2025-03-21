@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import { createTodo } from './actions';
-import './NewTodoForm.css';
 import Button from '@mui/material/Button';
 
 const NewTodoForm = ({ todos, onCreatePressed }) => {
